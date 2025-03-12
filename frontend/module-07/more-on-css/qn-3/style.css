@@ -1,0 +1,27 @@
+.nav-container {
+  background-color: #339af0;
+  padding: 36px 44px;
+}
+.nav-item:link {
+  margin-right: 50px;
+  color: white;
+  padding: 5px;
+}
+.nav-item:hover {
+  color: green;
+}
+.btn-home {
+  border: 2px solid black;
+}
+.btn-about {
+  border: 2px dashed blue;
+}
+.btn-contact {
+  border: 2px dotted green;
+}
+.btn-blog {
+  border: 2px double yellow;
+}
+.btn-login {
+  border: 2px ridge red;
+}
