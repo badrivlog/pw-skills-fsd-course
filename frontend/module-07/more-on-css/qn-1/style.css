@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  background-color: #339af0;
+  padding: 36px 44px;
+}
+
+.nav-item:link {
+  margin-right: 50px;
+  color: white;
+}
+.nav-item:hover {
+  color: green;
+}
