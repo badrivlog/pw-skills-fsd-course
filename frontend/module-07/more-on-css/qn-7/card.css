@@ -1,0 +1,15 @@
+.card {
+  width: 270px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #fcc419;
+  border-radius: 20px;
+  /* opacity: 0.8; */
+}
+.card-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.card:hover {
+  opacity: 1;
+}
