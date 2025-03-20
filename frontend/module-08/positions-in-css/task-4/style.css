@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px 15px;
+  position: sticky; /* To make sticky header sticks to the webpage */
+  top: 0;
+  left: 0;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links a:link {
+  color: gray;
+  text-decoration: none;
+}
+#btn-active {
+  color: white;
+}
+#nav-cta {
+  padding: 10px;
+  border: 1px solid #ffd8a8;
+  border-radius: 10px;
+  color: #ffd8a8;
+}
+main {
+  padding: 0 15px;
+}
