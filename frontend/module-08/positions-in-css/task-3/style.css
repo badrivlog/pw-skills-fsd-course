@@ -1,12 +1,9 @@
 .container {
   background-color: antiquewhite;
   padding: 15px;
+  border: 1px solid black;
 }
 .nature-img {
   width: 200px;
   float: right;
-}
-.text-box {
-  clear: left;
-  margin-right: 220px;
 }
