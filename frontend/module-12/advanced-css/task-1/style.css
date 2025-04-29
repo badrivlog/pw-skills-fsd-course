@@ -1,0 +1,18 @@
+:root {
+  --primaryBtn: #00b7ff;
+  --secondaryBtn: #6c757d;
+}
+
+.btn {
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+}
+
+#primaryBtn {
+  background-color: var(--primaryBtn);
+}
+#secondaryBtn {
+  background-color: var(--secondaryBtn);
+}
