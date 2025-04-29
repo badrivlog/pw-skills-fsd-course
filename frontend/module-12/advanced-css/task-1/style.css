@@ -1,6 +1,6 @@
 :root {
-  --primaryBtn: #00b7ff;
-  --secondaryBtn: #6c757d;
+  --primaryColor: #00b7ff;
+  --secondaryColor: #6c757d;
 }
 
 .btn {
@@ -11,8 +11,8 @@
 }
 
 #primaryBtn {
-  background-color: var(--primaryBtn);
+  background-color: var(--primaryColor);
 }
 #secondaryBtn {
-  background-color: var(--secondaryBtn);
+  background-color: var(--secondaryColor);
 }
