@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-22, Assignment Questions</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      h1 > span {
+        display: block;
+        color: #83831f;
+      }
+      pre {
+        padding: 1rem;
+        background-color: #eee;
+        color: green;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span>More on Javasript</span> Assignment Questions</h1>
+    <h2>Assignments Questions</h2>
+    <ul>
+      <li>
+        <h3>Q1: Understanding Arrow Functions & Lexical this</h3>
+        <p>
+          Consider the following code and <strong>predict the output</strong>.
+          Explain why the behavior occurs.
+        </p>
+        <pre>
+const person = {
+    name: "Alice",
+    greet: function () {
+        console.log(this.name);
+        setTimeout(() => {
+        console.log(`Hello my name is ${this.name}`);
+        }, 1000);
+    },
+};
+
+person.greet();
+        </pre>
+      </li>
+      <li>
+        <h3>Q2: Convert Traditional Functions to Arrow Functions</h3>
+        <p>
+          Rewrite the following function using
+          <strong>arrow functions</strong> without changing the behavior:
+        </p>
+        <pre>
+            
+function multiply(a, b) {
+  return a * b;
+}
+const obj = {
+  value: 10,
+  add: function (num) {
+    return this.value + num;
+  },
+};
+console.log(multiply(5, 3));
+console.log(obj.add(5));
+
+        </pre>
+      </li>
+      <li>
+        <h3>Q3: Handling Errors in Async-Await (Try-Catch Required)</h3>
+        <p>
+          Modify the following function to
+          <strong
+            >use async-await and proper error handling (try-catch).</strong
+          >
+        </p>
+        <p><strong>Original Code (With Promise):</strong></p>
+        <pre>
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let success = Math.random() > 0.5;
+      success ? resolve("Data received") : reject("Error fetching data");
+    }, 2000);
+  });
+}
+fetchData().then(console.log).catch(console.error);
+        </pre>
+      </li>
+      <li>
+        <h3>Q4: Async Function with Multiple Await Calls</h3>
+        <p>Write an async function that:</p>
+        <ol>
+          <li>Fetches <strong>user data</strong> after 1 second.</li>
+          <li>Fetches <strong>order details</strong> after 2 seconds.</li>
+          <li>Fetches <strong>payment status</strong> after 3 seconds.</li>
+          <li>Logs the final <strong>"Order completed"</strong> message.</li>
+          <li>
+            Use await to ensure
+            <strong>each step executes sequentially.</strong>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h3>Q5: Handling Synchronous Errors with try-catch</h3>
+        <p>Write a function that:</p>
+        <ol>
+          <li>Accepts a string input.</li>
+          <li>Converts it to a number and returns its square.</li>
+          <li>
+            Uses try-catch to handle cases where the input is not a valid
+            number.
+          </li>
+          <li>
+            If the error occurs, return "Invalid Input" instead of crashing.
+          </li>
+        </ol>
+      </li>
+    </ul>
+    <script src="assignments.js"></script>
+  </body>
+</html>
